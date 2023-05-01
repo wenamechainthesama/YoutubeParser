@@ -4,14 +4,11 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.dispatcher import FSMContext
 
-from dotenv import load_dotenv 
+from config import TOKEN
 from parser import main
 
-from os import getenv
 
-
-load_dotenv()
-bot = Bot(getenv('TOKEN'))
+bot = Bot(TOKEN)
 dispatcher = Dispatcher(bot, storage=MemoryStorage())
 
 
