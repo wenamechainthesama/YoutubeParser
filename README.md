@@ -20,23 +20,27 @@ YoutubeParser позволяет пользователям ввести имя 
 
 ## Запуск проекта
 1. **Клонируйте репозиторий:**
+
     ```bash
     git clone https://github.com/yourusername/YoutubeParser.git
     cd YoutubeParser
     ```
-2. **Создайте файл конфигурации:** В корне проекта создайте файл config.py и добавьте в него ваш токен Telegram API:
+3. **Создайте файл конфигурации:** В корне проекта создайте файл config.py и добавьте в него ваш токен Telegram API:
+
     ```python
     TOKEN = "ВАШ_ТЕЛЕГРАМ_ТОКЕН"
     ```
-3. Запустите бота:
+5. Запустите бота:
+
     ```bash
     python main.py
     ```
 ### Требования
 Для работы необходим Python 3.8+ и установка следующих библиотек таким образом:
-    ```bash
-    pip install aiogram requests
-    ```
+
+  ```bash
+  pip install aiogram requests
+  ```
 ## Использование
 ### Доступные команды
 - /start – приветствие и начало работы с ботом.
